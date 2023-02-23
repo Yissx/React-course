@@ -10,7 +10,9 @@ export const GifExpertApp = () =>{
     return(
         <>
             <h1>GifExpert App from NYCV</h1>
-            <AddCategoryComponent setCategories={setCategories}/>
+
+            <AddCategoryComponent onNewCategory={onAddCategory}/>
+
             <ol>
                 {
                     categories.map(category => {
