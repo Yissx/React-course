@@ -1,14 +1,14 @@
 import {useState} from 'react'
 import {} from 'react-dom'
 import {AddCategoryComponent} from './Components/AddCategory'
-import { GifGrid } from './Components/GifGreed'
+import { GifGrid } from './Components/GifGrid'
 
 export const GifExpertApp = () =>{
     const [categories, setCategories] = useState(["Death note", "Shingeki no kioyin", "Boku no Hero"])
 
     const onAddCategory = (category) => {
         if(categories.map(element => element.toLowerCase()).includes(category.toLowerCase())) return
-        setCategories([...categories, category])
+        setCategories([category, ...categories])
     }
     return(
         <>
