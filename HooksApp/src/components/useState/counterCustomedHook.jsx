@@ -1,8 +1,8 @@
-import { useCounter } from "../hooks/useCounter"
+import { useCounter } from "../../hooks/useCounter"
 
 export const CounterCustomedHook = () => {
 
-    const { counter, incrementCounter, decrementCounter, reset } = useCounter()
+    const { counter, incrementCounter, decrementCounter, resetCounter } = useCounter()
 
     return(
         <>
@@ -10,7 +10,7 @@ export const CounterCustomedHook = () => {
             <h3>Counter that uses a customed hook: {counter}</h3>
             <button onClick={incrementCounter(1)}>+1</button>
             <button onClick={decrementCounter(1)}>-1</button>
-            <button onClick={reset}>Reset</button>
+            <button onClick={resetCounter}>Reset</button>
         </>
     )
 }

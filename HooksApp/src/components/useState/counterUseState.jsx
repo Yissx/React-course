@@ -4,7 +4,7 @@ export const CounterUseState= () => {
     const [counters, setCounters] = useState({
         c1: 10,
         c2: 20,
-        c3: 30
+        c3: 30,
     })
     const {c1, c2, c3} = counters
 

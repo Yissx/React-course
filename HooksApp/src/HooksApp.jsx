@@ -1,5 +1,5 @@
-import { CounterUseState } from "./counters/counterUseState"
-import { CounterCustomedHook } from "./counters/counterCustomedHook"
+import { CounterUseState } from "./components/useState/counterUseState"
+import { CounterCustomedHook } from "./components/useState/counterCustomedHook"
 
 export const HooksApp = () => {
     
